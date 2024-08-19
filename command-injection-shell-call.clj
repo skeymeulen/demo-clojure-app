@@ -12,7 +12,6 @@
         [clojure.java.shell :only [sh]]
         [clojure.tools.cli :only (cli)])
 
-
 (def command "bash")
 // ruleid: command-injection-shell-call
 (println (:out (sh command "-c" "rsa" "-b" arg "-P" "" "-C" "" "-f" filename)))
